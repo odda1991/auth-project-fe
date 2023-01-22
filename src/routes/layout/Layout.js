@@ -1,11 +1,12 @@
+import './Layout.css';
 import { Outlet } from "react-router-dom";
 
 function Layout() {
     return (
-        <div>
-          <p>logo</p>
-          <h1>Our amazing app!</h1>
-  
+        <div className="App">
+          <div className="App-header">
+            <h1>Auth Project</h1>
+          </div>
           <Outlet/>
         </div>
       );

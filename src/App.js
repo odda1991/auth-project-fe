@@ -1,12 +1,11 @@
-import './App.css';
 import {
   BrowserRouter,
   Route,
   Routes
 } from 'react-router-dom'
-import Layout from './routes/Layout';
-import Signin from './routes/Signin';
-import Signup from './routes/Signup';
+import Layout from './routes/layout/Layout';
+import Signin from './routes/signin/Signin';
+import Signup from './routes/signup/Signup';
 
 function App() {
   return (
