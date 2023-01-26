@@ -18,6 +18,17 @@ function Signup() {
     }
 
     function signup() {
+      fetch('http://localhost:4000/users/sign-up', {
+        headers: {'content-Type' : 'application/json'},
+        method: 'post',
+        body: JSON.stringify({
+          name: name,
+          password: password,
+          email: email
+        })
+      })
+      .then(data => data.json())
+      .then(response => window.localStorage.setItem('jwtToken', response.jwtToken))
         console.log(`Signup user ${name} - email [${email}], password [${password}]` )
     }
 
